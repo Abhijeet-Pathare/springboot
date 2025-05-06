@@ -2,9 +2,10 @@ package com.app.game;
 
 public class GameRunner {
 	
-	private MarioGame game;
+//	private MarioGame game;
+	private SuperContraGame game;
 	
-	public GameRunner(MarioGame game) {
+	public GameRunner(SuperContraGame game) {
 		this.game = game;
 	}
 
