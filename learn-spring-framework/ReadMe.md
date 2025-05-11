@@ -116,4 +116,15 @@ Spring Modules
 	* Integration: JMS etc.
 * Each application can choose the modules they want to make use of
 	* They do not need to make use of all the things in Spring framework!
+--------------------------------------------------------------------------------------
+
+Spring Projects
+---------------
+* Spring Projects: Spring keeps evloving (REST API> Microservices>Cloud)
+	* Spring Boot: Most popular framework to build microservices.
+	* Spring Cloud: Build cloud native applications
+	* Spring Data: Integrate the same way with different types of databases: NoSQL and Relational
+	* Spring Integration: Address challenges with integration with other applications
+	* Spring Security: Secure your web application or REST API or microservice.
+	
 
