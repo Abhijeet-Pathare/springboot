@@ -92,3 +92,28 @@ Question 5; How is Spring JAR downloaded?(maven)
 	* Enables consistent usage accross all projects.
 	* Manages dependency updates and transitive dependencies.
 * Terminology Warning: Spring Dependency vs Maven dependency
+-----------------------------------------------------
+
+
+Exploring Speing - Dependency Injection Types
+
+*Constructor-based : Dependencies are set by creating the Bean using its Constructor
+*Setter-based : Dependencies are set by calling setter methods on your beans.
+*Field: No setter or constructor.
+	Dependency is injected using reflection.
+*Which one should you use?
+	* Spring team recommends Constructor-based injection as dependencies are automatically set when an object is created!
+-----------------------------------------------------------------
+
+Spring Modules
+--------------
+* Spring Framework is divided into modules:
+	* Core: IoC Container etc.
+	* Testing: Mock Objects, Spring MVC Test etc.
+	* Data Access: Transactions, KDBC, JPA etc
+	* Web Servlet: Spring MVC etc.
+	* Web Reactive: Spring Webfulc etc.
+	* Integration: JMS etc.
+* Each application can choose the modules they want to make use of
+	* They do not need to make use of all the things in Spring framework!
+

@@ -12,6 +12,7 @@ public class GameRunner {
 	@Autowired
 	private GamingConsole game;
 	
+	//constructor based DI
 	public GameRunner(GamingConsole game) {
 		this.game = game;
 	}
