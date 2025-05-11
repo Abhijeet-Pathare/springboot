@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.app.enterprise.Controller;
 import com.app.game.GameRunner;
 import com.app.game.GamingConsole;
 import com.app.game.MarioGame;
@@ -24,6 +25,9 @@ public class LearnSpringFrameworkApplication {
 		
 		GameRunner runner = context.getBean(GameRunner.class);
 		runner.run();
+		
+		Controller controller = context.getBean(Controller.class);
+		System.out.println(controller.returnValueFromBusinessService());
 	}
 
 }

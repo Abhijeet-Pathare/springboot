@@ -56,3 +56,20 @@ them together(provides IOC-Inversion of Control)
 		* Types: ApplicationContext(complex), BeanFactory(Simpler features - rarely used)
 	* Autowiring: Process of wiring in dependencies for a Spring Bean.
 	
+-------------------------------------------
+Question 3: Does the SpringFramewrk really add value?
+* In Game Runner Hello World App, we have very few classes.
+* But real world applications are much more complex:
+	* Multiple layers(Web, Business, Data etc)
+	* Each layer is dependent on the layer below it!
+		* Example Business Layer class talks to a Data Layer class
+			* Data Layer class is a dependency of Business Layer class.
+		* There are thousands of such dependencies in every application.
+*  With Spring Framework:
+	* Instead of FOCUSING on objects, their dependencies and wiring
+		* You can focus on business logic of your aplication!
+	* Spring Framework manages the lifecycle of objects:
+		*Mark components using annotations: @Component (and others...)
+		*Mark dependencies using @Autowired
+		*Allow Spring Framework to do its magic!
+*Ex: Controller>BusinessService(sum)>DataService(data)!
