@@ -36,9 +36,23 @@ ex.GameRunner runner = context.getBean(GameRunner.class);
 runner.run(); 
 ---------------------------------------------------------
 Now you must be having questions like:
-1) Whats happening in the background ? to know lets go into the logging debug level.
+Question 1: Whats happening in the background ? to know lets go into the logging debug level.
 Identified candidate component class: file [D:\My Learning\Springboot\springboot\learn-spring-framework\target\classes\com\app\game\GameRunner.class]
 Identified candidate component class: file [D:\My Learning\Springboot\springboot\learn-spring-framework\target\classes\com\app\game\MarioGame.class]
 Creating shared instance of singleton bean 'gameRunner'
 Creating shared instance of singleton bean 'marioGame'
 Autowiring by type from bean name 'gameRunner' via constructor to bean named 'marioGame'
+------------------------------------
+
+Question 2: Spring Framework - Important Terminology
+* @Componen(..): class managed by SprungFraework
+* Dependency: GameRunner needs GamingConsole impl!
+* Component Scan: How does Spring Framework find component classes?
+* it scans packages!(@ComponentScan("com.app.blablabla")
+*Dependency injection: Identify beans, their dependencies and wire
+them together(provides IOC-Inversion of Control)
+	* Spring Beans: An object managed by Spring Framework
+	* IoC container: Manages the lifecycle of beans and dependencies
+		* Types: ApplicationContext(complex), BeanFactory(Simpler features - rarely used)
+	* Autowiring: Process of wiring in dependencies for a Spring Bean.
+	
