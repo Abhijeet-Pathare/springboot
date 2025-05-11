@@ -77,3 +77,18 @@ Question 3: Does the SpringFramewrk really add value?
 --------------------------------------------
 Question 4: What if I want to run Super Contra game?
 -> Used @Primary annotation in SuperContraGame as all the games are having component scan. 
+-----------------------------------------------
+Question 5; How is Spring JAR downloaded?(maven)
+* What happens if you manually download Spring JAR?
+	* Remember: Spring JAR needs other JARs
+	* What if you need to upgrade to a new version??
+* Maven: Manage JARs needed by apps (application dependencies)
+	* Once you add a dependency on Spring Framework, Maven would download:
+		* Spring Framework and its dependencies.
+* All configuration in pom.xml 
+	*Maven artifacts: identified by a group id , an artifact id!
+* Important Features:
+	* Defines a simple project setup that follows best practices.
+	* Enables consistent usage accross all projects.
+	* Manages dependency updates and transitive dependencies.
+* Terminology Warning: Spring Dependency vs Maven dependency
