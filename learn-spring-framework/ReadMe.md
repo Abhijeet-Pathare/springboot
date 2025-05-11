@@ -73,3 +73,7 @@ Question 3: Does the SpringFramewrk really add value?
 		*Mark dependencies using @Autowired
 		*Allow Spring Framework to do its magic!
 *Ex: Controller>BusinessService(sum)>DataService(data)!
+
+--------------------------------------------
+Question 4: What if I want to run Super Contra game?
+-> Used @Primary annotation in SuperContraGame as all the games are having component scan. 
